@@ -4,7 +4,8 @@
   "description": "音游狗老黄历 bot Telegram 版本",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

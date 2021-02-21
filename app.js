@@ -14,6 +14,26 @@ bot.command('today', async (ctx) => {
   }
 })
 
+bot.on('inline_query', async (ctx) => {
+  console.log('new inline query...')
+  console.log(ctx.update.inline_query)
+  try {
+    let hl = await func.get(ctx.update.inline_query.from.id, `@${ctx.update.inline_query.from.username}`)
+    ctx.telegram.answerInlineQuery(ctx.inlineQuery.id, [{
+      type: 'article',
+      id: 0,
+      title: '在此聊天分享我的今日黄历',
+      input_message_content: {
+        message_text: hl
+      }
+    }], {
+      cache_time: 1
+    })
+  } catch (e) {
+    
+  }
+})
+
 bot.launch()
 
 bot.telegram.setWebhook(`https://${process.env.BOT_DOMAIN}/${process.env.BOT_PATH}`, {})

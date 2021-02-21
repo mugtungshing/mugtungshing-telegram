@@ -1,0 +1,25 @@
+{
+  "name": "mugtungshing-telegram",
+  "version": "1.0.0",
+  "description": "音游狗老黄历 bot Telegram 版本",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Astrian/mugtungshing-telegram.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Astrian/mugtungshing-telegram/issues"
+  },
+  "homepage": "https://github.com/Astrian/mugtungshing-telegram#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "lunar-calendar": "^0.1.4",
+    "seedrandom": "^3.0.5",
+    "telegraf": "^4.1.0"
+  }
+}

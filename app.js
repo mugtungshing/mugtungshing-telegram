@@ -39,4 +39,4 @@ bot.launch()
 bot.telegram.setWebhook(`https://${process.env.BOT_DOMAIN}/${process.env.BOT_PATH}`, {})
 
 // Http webhook, for nginx/heroku users.
-bot.startWebhook(`/${process.env.BOT_PATH}`, null, 8000)
+bot.startWebhook(`/${process.env.BOT_PATH}`, null, env.PORT || 8000)

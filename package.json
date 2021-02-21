@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "node app.js"
-   },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Astrian/mugtungshing-telegram.git"
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Astrian/mugtungshing-telegram#readme",
   "dependencies": {
-    "koa": "^2.13.1",
+    "dotenv": "^8.2.0",
     "telegraf": "^4.1.0"
   }
 }

@@ -1,6 +1,6 @@
 const { Telegraf } = require('telegraf')
 // const fs = require('fs')
-const port = env.PORT || 8000
+const port = process.env.PORT || 8000
 require('dotenv')
 const func = require('./func')
 

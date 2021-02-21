@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Astrian/mugtungshing-telegram#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "lunar-calendar": "^0.1.4",
+    "seedrandom": "^3.0.5",
     "telegraf": "^4.1.0"
   }
 }
